@@ -11,24 +11,35 @@ header{
     color: #ffffff;
 }
 
+#title{
+    font-weight: lighter;
+}
+
+#sub-titulo{
+    font-weight: lighter;
+    position: relative;
+    right: 102px;
+}
+
 .info-container{
     padding: 30px;
     vertical-align: middle;
-    background-color: rgb(41, 39, 131);
+    background-color: rgb(190, 229, 255);
 }
 
 .info{
     display: inline-block;
     height: 450px;
     width: 31%;
-    background-color: rgb(150, 167, 216);
+    background-color: rgb(40, 189, 102);
     vertical-align: middle;
+    box-shadow: 0px 10px 10px #093570;
     border-radius: 25px;
 }
 
 #titulo-com{
     position: relative;
-    top: -20px;
+    left: 20px;
 }
 
 ul{
@@ -82,10 +93,12 @@ ul{
 
 #moldura{
     position: relative;
-    top: -20px;
+    top: -19px;
     outline-offset: -1px;
     width: 100%;
     height: 100%;
+    border-radius: 25px;
+    outline: 3px solid rgb(6, 61, 35);
 }
 
 #img1:hover ~ #moldura{
@@ -192,8 +205,8 @@ input{
 
 .bar1{
     position: relative;
-    outline: 5px solid rgb(255, 255, 255);
-    outline-offset: -5px;
+    outline: 3px solid rgb(255, 255, 255);
+    outline-offset: -3px;
     padding-right: 25%;
     padding-top: 3%;
     top: 431px;
