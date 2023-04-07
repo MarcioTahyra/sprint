@@ -6,22 +6,24 @@
 }
 
 header{
-    background-color: lightgray;
+    background-color:#0f0f0f;
     text-align: center;
+    color: #ffffff;
 }
 
 .info-container{
     padding: 30px;
     vertical-align: middle;
-    background-color: black;
+    background-color: rgb(41, 39, 131);
 }
 
 .info{
     display: inline-block;
     height: 450px;
     width: 31%;
-    background-color: gray;
+    background-color: rgb(150, 167, 216);
     vertical-align: middle;
+    border-radius: 25px;
 }
 
 #titulo-com{
@@ -75,6 +77,7 @@ ul{
     background-image: url(../img/chale\ 1.jpg);
     background-position: center;
     background-size: cover;
+    border-radius: 25px;
 }
 
 #moldura{
@@ -89,54 +92,63 @@ ul{
     background-image: url("../img/chale\ 1.jpg");
     background-position: center;
     background-size: cover;
+    border-radius: 25px;
 }
 
 #img2:hover ~ #moldura{
     background-image: url("../img/chale\ 2.jpg");
     background-position: center;
     background-size: cover;
+    border-radius: 25px;
 }
 
 #img3:hover ~ #moldura{
     background-image: url("../img/chale\ 3.jpg");
     background-position: center;
     background-size: cover;
+    border-radius: 25px;
 }
 
 #img4:hover ~ #moldura{
     background-image: url("../img/chale\ 4.jpg");
     background-position: center;
     background-size: cover;
+    border-radius: 25px;
 }
 
 #img5:hover ~ #moldura{
     background-image: url("../img/chale\ 5.jpg");
     background-position: center;
     background-size: cover;
+    border-radius: 25px;
 }
 
 #img6:hover ~ #moldura{
     background-image: url("../img/chale\ 6.jpg");
     background-position: center;
     background-size: cover;
+    border-radius: 25px;
 }
 
 #img7:hover ~ #moldura{
     background-image: url("../img/chale\ 7.jpg");
     background-position: center;
     background-size: cover;
+    border-radius: 25px;
 }
 
 #img8:hover ~ #moldura{
     background-image: url("../img/chale\ 8.jpg");
     background-position: center;
     background-size: cover;
+    border-radius: 25px;
 }
 
 #img9:hover ~ #moldura{
     background-image: url("../img/chale\ 9.jpg");
     background-position: center;
     background-size: cover;
+    border-radius: 25px;
 }
 
 footer{
@@ -157,8 +169,16 @@ input{
     display: block;
 }
 
+#s1{
+    border-bottom-left-radius: 25px;
+}
+
 #slide2:checked ~ .texto2 {
     display: block;
+}
+
+#s2{
+    border-bottom-right-radius: 25px;
 }
 
 #slide3:checked ~ .texto3 {
