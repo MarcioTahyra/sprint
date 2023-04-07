@@ -1,0 +1,116 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+header{
+    background-color: lightgray;
+    text-align: center;
+}
+
+.info-container{
+    padding: 30px;
+    vertical-align: middle;
+    background-color: black;
+}
+
+.info{
+    display: inline-block;
+    height: 450px;
+    width: 31%;
+    background-color: gray;
+    vertical-align: middle;
+}
+
+#titulo-com{
+    position: relative;
+    top: -20px;
+}
+
+ul{
+    list-style-type: none;
+    text-align: center;
+    
+}
+
+.extra{
+    display: inline-block;
+    background-color: lightgray;
+}
+
+#regras{
+    width: 60%;
+}
+
+#diaria{
+    width: 39%;
+}
+
+.outro{
+    background-color: gray;
+}
+
+.image{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+#img-1{
+    background-image: url('../img/chale\ 1.jpg');
+}
+
+footer{
+    background-color: lightgray;
+    text-align: center;
+    padding: 50px;
+}
+
+input{
+    display: none;
+}
+
+.texto1, .texto2, .texto3, .texto4{
+    display: none;
+} 
+
+#slide1:checked ~ .texto1 {
+    display: block;
+}
+
+#slide2:checked ~ .texto2 {
+    display: block;
+}
+
+#slide3:checked ~ .texto3 {
+    display: block;
+}
+
+#slide4:checked ~ .texto4 {
+    display: block;
+}
+
+
+.bar1{
+    position: relative;
+    outline: 5px solid rgb(255, 255, 255);
+    outline-offset: -5px;
+    padding-right: 25%;
+    padding-top: 3%;
+    top: 431px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.bar1:hover{
+    background-color: white;
+}
+
+#regras ul{
+    text-align: justify;
+    display: inline-block;
+    vertical-align: top;
+}
