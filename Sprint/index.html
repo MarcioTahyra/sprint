@@ -24,7 +24,7 @@
                 <label class="bar1" for="slide2"></label>
                 <label class="bar1" for="slide3"></label>
                 <label class="bar1" id="s2" for="slide4"></label> 
-                <h2 class="txt" id="titulo-com"> Comodidades apresentadas </h2>  
+                <h2 class="txt" id="titulo-com"> Comodidades apresentadas: </h2>  
                 <div class="content">
                     <div class="slides">
                         <input type="radio" name="slide" id="slide1" checked>
@@ -32,7 +32,7 @@
                         <input type="radio" name="slide" id="slide3">
                         <input type="radio" name="slide" id="slide4">
             
-                        <div class="texto1"> 
+                        <div class="com-list" id="texto1"> 
                             <ul>
                                 <li> <h3> Destaques </h3> </li>
                                 <li> Vista para as águas </li>
@@ -46,7 +46,7 @@
                                 <li> Lareira interna (lenha) </li>
                             </ul>
                         </div>
-                        <div class="texto2"> 
+                        <div class="com-list" id="texto2"> 
                             <ul>
                                 <li> <h3> Banheiro </h3> </li>
                                 <li> Banheira </li>
@@ -63,7 +63,7 @@
                                 <li> Local para guardar as roupas (cômoda) </li>
                             </ul>
                         </div>
-                        <div class="texto3"> 
+                        <div class="com-list" id="texto3"> 
                             <ul>
                                 <li> <h3> Entretenimento </h3> </li>
                                 <li> Conexão à Ethernet </li>
@@ -85,7 +85,7 @@
                                 <li> Churrasqueira </li>
                             </ul>
                         </div>
-                        <div class="texto4"> 
+                        <div class="com-list" id="texto4"> 
                             <ul>
                             <li> <h3> Cozinha e sala de jantar </h3> </li>
                             <li> Refrigerador </li>
@@ -107,8 +107,8 @@
             </div>
                 
             <div class="info" id="descrição">
-                <h2> A chalé: </h2>
-                <p class="txt" > Imagine um Chalé Romântico, reservado e super acolhedor em meio a natureza, rodeado de pastagem, 
+                <h2 id="titulo-desc"> A chalé: </h2>
+                <p class="txt" id="desc"> Imagine um Chalé Romântico, reservado e super acolhedor em meio a natureza, rodeado de pastagem, 
                     hortênsias, banhado por riachos, um céu incrível e cachoeira de água cristalina. Primamos por uma 
                     experiência confortável e romântica com o clima de serra, paz e o aconchego de um fogão a lenha e a 
                     banheira aquecida. </p>
@@ -134,36 +134,59 @@
                 <div id="moldura"></div>
             </div>
         </section>
-        <div class="extra" id="regras">
-            <p> <h2> Regras da casa </h2></p>
-            <ul class="txt">
-                <li> <h3> Quem pode se hospedar </h3> </li>
-                <li> Máximo de 6 hóspedes </li>
-                <li> Permitido animais de estimação </li>
-            </ul>
-            <ul>
-                <li> <h3> O que é permitido </h3> </li>
-                <li> Check-in após 09:00 </li>
-                <li> Checkout antes das 15:00 </li>
-                <li> Não são permitidas festas ou eventos </li>
-                <li> É permitido fumar </li>
-            </ul>
-          
-        </div>
 
-        <div class="extra" id="diaria">
-            <p class="txt"> Diária R$366 + 75 por pessoa (3+) </p>
-        </div>
+        <section class="ext-container">
+            <div class="extra" id="regras">
+                <p> <h2 class="txt" id="titulo-regras"> Regras da casa </h2></p>
+                    <ul class="txt">
+                        <li> <h3> Quem pode se hospedar </h3> </li>
+                        <li> Máximo de 6 hóspedes </li>
+                        <li> Permitido animais de estimação </li>
+                    </ul>
+                <ul class="txt">
+                    <li> <h3> O que é permitido </h3> </li>
+                    <li> Check-in após 09:00 </li>
+                    <li> Checkout antes das 15:00 </li>
+                    <li> Não são permitidas festas ou eventos </li>
+                    <li> É permitido fumar </li>
+                </ul>
+            
+            </div>
 
-        <div class="outro" id="avaliaçao">
-            <h3 class="txt"> Luiz H.</h3>
-            <p class="txt"> O lugar e extremamente maravilhoso, acolhedor, um lugar para se chamar de lar.
-                Único problema que passa muito rápido e tem que ir embora </p>
-            <h3> José C. </h3>
-            <p class="txt"> Local super agradável. Chalé confortável, limpo e bem organizado. Tinha todo o necessário para um bom final de semana. Recomendável para descanso, importante se programar, pois é um pouco distante da cidade.
-            </p>
-        </div>
+            <div class="extra" id="diaria">
+                <h2 class="txt" id="titulo-dia"> Diária: </h2>
+                <p class="txt"> Diária R$366 + 75 por pessoa (3+) </p>
 
+                <div class="hospedes">
+                    <input type="radio" id="hos2" name=hospedes checked>
+                    <label for="hos2"> 2 </label><br>
+                    <input type="radio" id="hos3" name=hospedes>
+                    <label for="hos3"> 3 </label><br>
+                    <input type="radio" id="hos4" name=hospedes>
+                    <label for="hos4"> 4 </label><br>
+                    <input type="radio" id="hos5" name=hospedes>
+                    <label for="hos5"> 5 </label><br>
+                    <input type="radio" id="hos6" name=hospedes>
+                    <label for="hos6"> 6 </label><br>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="outro-container">
+            <div class="outro">
+                <div class="aval">
+                    <h3 class="txt" id="user1"> Luiz H.</h3>
+                    <p class="txt"> O lugar e extremamente maravilhoso, acolhedor, um lugar para se chamar de lar.
+                                    Único problema que passa muito rápido e tem que ir embora </p>
+                </div>
+                <div class="aval">
+                    <h3 class="txt" id="user2"> José C. </h3>
+                    <p class="txt"> Local super agradável. Chalé confortável, limpo e bem organizado. Tinha todo o necessário para um bom final de semana. Recomendável para descanso, importante se programar, pois é um pouco distante da cidade.
+                    </p>
+                </div>
+            </div>
+        </section>
             </main>
 
     <footer>
