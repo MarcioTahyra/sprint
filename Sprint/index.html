@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="../Sprint/CSS/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -136,40 +137,52 @@
         </section>
 
         <section class="ext-container">
-            <div class="extra" id="regras">
-                <p> <h2 class="txt" id="titulo-regras"> Regras da casa </h2></p>
-                    <ul class="txt">
-                        <li> <h3> Quem pode se hospedar </h3> </li>
-                        <li> Máximo de 6 hóspedes </li>
-                        <li> Permitido animais de estimação </li>
-                    </ul>
-                <ul class="txt">
-                    <li> <h3> O que é permitido </h3> </li>
-                    <li> Check-in após 09:00 </li>
-                    <li> Checkout antes das 15:00 </li>
-                    <li> Não são permitidas festas ou eventos </li>
-                    <li> É permitido fumar </li>
-                </ul>
-            
+            <div class="extra">
+                <div class="regra-container">
+                        <div class="regratxt">
+                            <p> <h2 class="txt" id="titulo-regras"> Regras da casa </h2></p>
+                            <ul class="txt">
+                                <li> <h3> Quem pode se hospedar </h3> </li>
+                                <li> Máximo de 6 hóspedes </li>
+                                <li> Permitido animais de estimação </li>
+                            </ul>
+                            <ul class="txt">
+                                <li> <h3> O que é permitido </h3> </li>
+                                <li> Check-in após 09:00 </li>
+                                <li> Checkout antes das 15:00 </li>
+                                <li> Não são permitidas festas ou eventos </li>
+                                <li> É permitido fumar </li>
+                            </ul>
+                        </div>
+                </div>
             </div>
 
-            <div class="extra" id="diaria">
-                <h2 class="txt" id="titulo-dia"> Diária: </h2>
-                <p class="txt"> Diária R$366 + 75 por pessoa (3+) </p>
+            <div class="extra">
+                <div class="diaria-container">
+                    <h2 class="txt" id="titulo-dia"> Diária: </h2>
+                    <p class="txt"> Número de hospedes: </p>
 
-                <div class="hospedes">
-                    <input type="radio" id="hos2" name=hospedes checked>
-                    <label for="hos2"> 2 </label><br>
-                    <input type="radio" id="hos3" name=hospedes>
-                    <label for="hos3"> 3 </label><br>
-                    <input type="radio" id="hos4" name=hospedes>
-                    <label for="hos4"> 4 </label><br>
-                    <input type="radio" id="hos5" name=hospedes>
-                    <label for="hos5"> 5 </label><br>
-                    <input type="radio" id="hos6" name=hospedes>
-                    <label for="hos6"> 6 </label><br>
+                    <div class="diaria">
+
+                        <input type="radio" id="hos2" name=hospedes checked>
+                        <label for="hos2"> 1 ou 2 </label>
+                        <input type="radio" id="hos3" name=hospedes>
+                        <label for="hos3"> 3 </label>
+                        <input type="radio" id="hos4" name=hospedes>
+                        <label for="hos4"> 4 </label>
+                        <input type="radio" id="hos5" name=hospedes>
+                        <label for="hos5"> 5 </label>
+                        <input type="radio" id="hos6" name=hospedes>
+                        <label for="hos6"> 6 </label>
+
+                        <p class = "preço" id="p2"> R$366,00 </p>
+                        <p class = "preço" id="p3"> R$441,00 </p>
+                        <p class = "preço" id="p4"> R$516,00 </p>
+                        <p class = "preço" id="p5"> R$591,00 </p>
+                        <p class = "preço" id="p6"> R$666,00 </p>
+                    </div>
+                    
                 </div>
-
             </div>
         </section>
 

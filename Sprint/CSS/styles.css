@@ -2,29 +2,36 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Righteous', cursive;
 }
 
 header{
+    font-size: 26px;
+    width: 100vw;
     background-color:#0f0f0f;
     text-align: center;
-    color: #ffffff;
 }
 
-#title{
-    font-weight: lighter;
+body {
+    overflow-x: hidden;
+  }
+
+h1, h2, h3, p, ul, li, label{
+    color: rgb(255, 255, 255);
 }
 
 #sub-titulo{
+    width: 100vw;
     font-weight: lighter;
     position: relative;
-    right: 102px;
 }
 
 .info-container{
+    height: 550px;
+    width: 100vw;
     padding: 40px;
     vertical-align: middle;
-    background-color: rgb(190, 229, 255);
+    background-color: rgb(49, 49, 49);
 }
 
 .info{
@@ -32,9 +39,9 @@ header{
     display: inline-block;
     height: 450px;
     width: 33%;
-    background-color: rgb(40, 189, 102);
+    background-color: rgb(20, 20, 20);
     vertical-align: middle;
-    box-shadow: 0px 10px 10px #093570;
+    box-shadow: 0px 10px 18px #000000;
     border-radius: 25px;
     outline: 3px solid white;
     outline-offset: -3px;
@@ -42,13 +49,10 @@ header{
 
 #titulo-com, #titulo-desc, .com-list, #desc, #loc, #qnt, .txt{
     position: relative;
-    color: white;
-    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
-        1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
 }
 
 #titulo-com, #titulo-desc, #titulo-regras,#titulo-dia{
-    font-size: 30px;
+    font-size: 25px;
 }
 
 ul h3, #titulo-com, #titulo-desc, #titulo-regras, #titulo-dia{
@@ -57,7 +61,7 @@ ul h3, #titulo-com, #titulo-desc, #titulo-regras, #titulo-dia{
 
 .com-list, #desc, #loc, #qnt{
     text-align: justify;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 
@@ -75,7 +79,6 @@ ul h3, #titulo-com, #titulo-desc, #titulo-regras, #titulo-dia{
 }
 
 #desc, #loc, #qnt{
-    color: white;
     padding-left: 5%;
     padding-right: 5%;
     top: 20px;
@@ -98,48 +101,94 @@ ul{
 }
 
 .ext-container{
-    align-items: center;
-    background-color: rgb(190, 229, 255);
-    height: 200px;
-    display: inline-flex;
+    padding: 40px;
     width: 100vw;
+    align-items: center;
+    background-color: rgb(49, 49, 49);
+    height: 300px;
+    display: inline-flex;
 }
 
 .extra{
+
+    height: fit-content;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(40, 189, 102);
+    background-color: rgb(20, 20, 20);
     border-radius: 25px;
     outline: 3px solid white;
-    box-shadow: 0px 10px 10px #093570;
+    box-shadow: 0px 10px 10px black;
 }
 
-#regras{
+.regra-container{
+    width: 35vw;
+    height: 240px;
+}
+
+.regratxt{
+    padding: 20px;
+}
+
+.regras{
     text-align: center;
-    width: 45vw;
-    height: 70%;
+    width: fit-content;
+    height: 100%;
 }
 
-#regras ul{
+.regras ul{
     text-align: justify;
     display: inline-block;
     vertical-align: top;
 }
 
-#diaria{
-    text-align:center;
-    width: 45vw;
-    height: 70%;
+.diaria-container{
+    text-align: center;
+    width: 55vw;
+    height: 240px;
 }
 
 .outro-container{
     align-items: center;
-    background-color: rgb(190, 229, 255);
-    height: 230px;
-    display: inline-flex;
+    background-color: rgb(49, 49, 49);
+    height: 300px;
     width: 100vw;
+    display: inline-flex;
 }
 
+.preço{
+    margin: 10px;
+    font-size: 60px;
+    padding: 10px;
+    display: none;
+}
+
+.diaria{
+    height: 60%;
+    display: inline-block;
+}
+
+.diaria label{
+    width: 18%;
+    display: inline-block;
+    border: 3px solid white;
+    border-radius: 25px;
+}
+
+#hos2:checked ~ #p2{
+    display: block;
+}
+#hos3:checked ~ #p3{
+    display: block;
+}
+#hos4:checked ~ #p4{
+    display: block;
+}
+#hos5:checked ~ #p5{
+    display: block;
+}
+#hos6:checked ~ #p6{
+    display: block;
+}
 
 .aval{
     width: 80%;
@@ -147,10 +196,10 @@ ul{
     margin-bottom: 15px;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(40, 189, 102);
+    background-color: rgb(20, 20, 20);
     border-radius: 25px;
     outline: 3px solid white;
-    box-shadow: 0px 10px 10px #093570;
+    box-shadow: 0px 10px 10px black;
 }
 
 .image{
@@ -250,14 +299,15 @@ ul{
 }
 
 footer{
+    width: 100vw;
     background-color: lightgray;
     text-align: center;
     padding: 50px;
 }
 
-/* input{
+input{
     display: none;
-} */
+}
 
 #texto1, #texto2, #texto3, #texto4{
     display: none;
@@ -288,7 +338,7 @@ footer{
 }
 
 .bar1{
-    box-shadow: 0 -1px 5px;
+    box-shadow: 0 -3px 5px black;
     position: relative;
     outline: 3px solid rgb(255, 255, 255);
     outline-offset: -3px;
@@ -300,6 +350,6 @@ footer{
 }
 
 .bar1:hover{
-    background-color: white;
-    box-shadow: 0 0 2px;
+    background-color: rgb(10, 10, 10);
+    box-shadow: 0 -1px 3px black;
 }
